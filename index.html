@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernand Azianti - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Fernand Azianti</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav-list"><a href="#home" class="nav-link active-link">Accueil</a></li>
+                    <li class="nav-list"><a href="#about" class="nav-link">À Propos</a></li>
+                    <li class="nav-list"><a href="#projects" class="nav-link">Projets</a></li>
+                    <li class="nav-list"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <p>Bonjour, je suis Fernand Azianti !</p>
+                    <p>Je suis développeur logiciel avec plus de 2 ans d'expérience.</p>
+                    <div class="text-btn">
+                        <a href="#contact"><button class="btn hire-btn">Engagez-moi</button></a>
+                        <a href="CV.pdf" download="CV"><button class="btn">Télécharger le CV<i class="uil uil-file"></i></button></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/fernand-azianti-991509320/"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="#"><i class="uil uil-behance-alt"></i></a>
+                        <a href="https://github.com/Honofer"><i class="uil uil-github-alt"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <h1>À Propos de Moi</h1>
+                <div class="about-info">
+                    <img src="your-profile-image.png" alt="Fernand Azianti" class="profile"/>
+                    <p>Je m'appelle Fernand ! Je suis développeur logiciel avec plus de 2 ans d'expérience.</p>
+                    <a href="#contact"><button class="about-me-btn">Engagez-moi</button></a>
+                </div>
+                <div class="skill">
+                    <div class="skill-box"><span class="title">HTML</span><div class="skill-bar html"><span class="skill-per"><span class="tooltip">80%</span></span></div></div>
+                    <div class="skill-box"><span class="title">CSS</span><div class="skill-bar css"><span class="skill-per"><span class="tooltip">80%</span></span></div></div>
+                    <div class="skill-box"><span class="title">Python</span><div class="skill-bar"><span class="skill-per python"><span class="tooltip">70%</span></span></div></div>
+                    <div class="skill-box"><span class="title">MySQL</span><div class="skill-bar"><span class="skill-per MySql"><span class="tooltip">50%</span></span></div></div>
+                    <div class="skill-box"><span class="title">JavaScript</span><div class="skill-bar"><span class="skill-per javascript"><span class="tooltip">40%</span></span></div></div>
+                    <div class="skill-box"><span class="title">PHP</span><div class="skill-bar"><span class="skill-per php"><span class="tooltip">30%</span></span></div></div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <h1>Projets</h1>
+                <div class="project-container">
+                    <div class="project-box"><h3>Terminés</h3><label>10+ Projets Réalisés</label></div>
+                    <div class="project-box"><h3>Clients</h3><label>70+ Clients Satisfaits</label></div>
+                    <div class="project-box"><h3>Expérience</h3><label>Plus de 2 ans en développement web</label></div>
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <h1>Travaillons Ensemble</h1>
+                <p>Avez-vous un projet en tête ? Contactez-moi ici :</p>
+                <div class="contact-info">
+                    <p>Email : <a href="mailto:Aziantifernand@gmail.com">Aziantifernand@gmail.com</a></p>
+                    <p>Téléphone : +228 90891894</p>
+                </div>
+                <div class="form-control">
+                    <input type="text" class="input-field" placeholder="Votre Nom">
+                    <input type="text" class="input-field" placeholder="Votre Email">
+                    <input type="text" class="input-field" placeholder="Sujet">
+                    <textarea placeholder="Message" class="textarea"></textarea>
+                    <button class="btn">Envoyer<i class="uil uil-message"></i></button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-menu">
+                <a href="#home">Accueil</a>
+                <a href="#about">À Propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fernand-azianti-991509320/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="uil uil-behance-alt"></i></a>
+                <a href="https://github.com/Honofer"><i class="uil uil-github-alt"></i></a>
+            </div>
+            <p>&copy; 2024 Fernand Azianti - Tous droits réservés</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

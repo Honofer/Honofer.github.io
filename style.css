@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4a4e69;
+    padding: 15px;
+}
+
+.nav-logo p {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav_menu_list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.nav-link:hover, .active-link {
+    background: #9a8c98;
+}
+
+.wrapper {
+    padding: 20px 0;
+}
+
+.featured-box {
+    text-align: center;
+    padding: 50px 20px;
+    background: #22223b;
+    color: white;
+}
+
+.featured-text p {
+    margin: 10px 0;
+}
+
+.text-btn {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #4a4e69;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #9a8c98;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-info {
+    text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-box {
+    width: 30%;
+    margin: 10px;
+}
+
+.skill-bar {
+    background: #e7e7de;
+    border-radius: 5px;
+    height: 10px;
+    position: relative;
+}
+
+.skill-per {
+    background: #4a4e69;
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-social-icons {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer-social-icons a {
+    margin: 0 10px;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+nav.dark-mode {
+    background: #1f1f1f;
+}
+
+.footer-menu a.dark-mode,
+.nav-link.dark-mode {
+    color: #fff;
+}
