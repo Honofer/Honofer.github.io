@@ -10,6 +10,7 @@ const toggleSwitch = document.getElementById("toggle-switch");
 
 toggleSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");
+
 });
 
 // Effet de saisie pour les textes animés
@@ -79,4 +80,7 @@ function scrollActive() {
     });
 }
 
-window.addEventListener("scroll", scrollActive);
+window.addEventListener("scroll", scrollActive)
+;
+document.getElementById('contactForm').addEventListener('submit', function(event) { event.preventDefault(); 
+     const formData = new FormData(this); const formObject = {}; formData.forEach((value, key) => { formObject[key] = value; }); fetch('/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formObject) }) .then(response => response.json()) .then(data => { if (data.success) { alert('Formulaire envoyé avec succès !'); } else { alert('Erreur lors de l\'envoi du formulaire.'); } }) .catch(error => { console.error('Erreur:', error); alert('Erreur lors de l\'envoi du formulaire.'); }); });
