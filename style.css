@@ -512,15 +512,15 @@ i {
 }
 .skill-per.javascript {
     animation-delay: 0.1s;
-    width: 40%;
+    width: 60%;
 }
 .skill-per.MySql {
     animation-delay: 0.1s;
-    width: 50%;
+    width: 80%;
 }
 .skill-per.php{
     animation-delay: 0.1s;
-    width: 30%;
+    width: 60%;
 }
 
 @keyframes progress {

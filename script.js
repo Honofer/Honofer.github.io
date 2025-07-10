@@ -82,5 +82,14 @@ function scrollActive() {
 
 window.addEventListener("scroll", scrollActive)
 ;
-document.getElementById('contactForm').addEventListener('submit', function(event) { event.preventDefault(); 
-     const formData = new FormData(this); const formObject = {}; formData.forEach((value, key) => { formObject[key] = value; }); fetch('/submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formObject) }) .then(response => response.json()) .then(data => { if (data.success) { alert('Formulaire envoyé avec succès !'); } else { alert('Erreur lors de l\'envoi du formulaire.'); } }) .catch(error => { console.error('Erreur:', error); alert('Erreur lors de l\'envoi du formulaire.'); }); });
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_u7xueg2', 'template_93cnq3g', this)
+        .then(function() {
+            alert('Message envoyé avec succès !');
+            document.getElementById('contactForm').reset();
+        }, function(error) {
+            console.error('Erreur lors de l\'envoi:', error);
+            alert('Erreur lors de l\'envoi du message.');
+        });
+});
